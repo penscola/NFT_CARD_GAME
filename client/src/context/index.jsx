@@ -28,7 +28,7 @@ export const GlobalContextProvider = ({ children }) => {
 
   //* Set the wallet address to the state
   const updateCurrentWalletAddress = async () => {
-    const accounts = await window?.ethereum?.request({
+    const accounts = await window.ethereum.request({
       method: 'eth_requestAccounts',
     });
 
@@ -38,7 +38,7 @@ export const GlobalContextProvider = ({ children }) => {
   useEffect(() => {
     updateCurrentWalletAddress();
 
-    window?.ethereum?.on('accountsChanged', updateCurrentWalletAddress);
+    window.ethereum.on('accountsChanged', updateCurrentWalletAddress);
   }, []);
 
   //* Set the smart contract and the provider to the state

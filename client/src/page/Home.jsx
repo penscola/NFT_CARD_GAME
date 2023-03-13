@@ -1,4 +1,3 @@
-import { constants } from 'ethers';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,8 +11,8 @@ const Home = () => {
 
   const handleClick = async () => {
     try {
-      const PLayerExists = await contract.isPlayer(walletAddress);
-      if (!PLayerExists) {
+      const playerExists = await contract.isPlayer(walletAddress);
+      if (!playerExists) {
         await contract.registerPlayer(playerName, playerName);
 
         setShowAlert({
