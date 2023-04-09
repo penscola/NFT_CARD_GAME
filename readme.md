@@ -11,7 +11,7 @@
 4. Fund your wallet from the [Avax Faucet](https://faucet.avax.network/)
 5. Create a `.env` file and specify a PRIVATE_KEY variable.
 6. To get to the private key, do the following steps:
-  1. Open up the Core extension -> click the hamburger menu on the top left -> go to security and privacy -> click show recovery phase -> enter your password -> copy the phrase -> go to [wallet.avax.network](https://wallet.avax.network/) -> click access wallet -> choose mnemonic key phrase -> paste what the words we’ve copied from Core -> on the sidebar click manage keys -> view c-chain private key -> copy -> paste it in the .env file
+  1. Open up the Core extension ->> click the hamburger menu on the top left -> go to security and privacy -> click show recovery phase -> enter your password -> copy the phrase -> go to [wallet.avax.network](https://wallet.avax.network/) -> click access wallet -> choose mnemonic key phrase -> paste what the words we’ve copied from Core -> on the sidebar click manage keys -> view c-chain private key -> copy -> paste it in the .env file
 7. Copy the `hardhat.config.ts` file from the GitHub gist down in the description
 8. Copy the `deploy.ts` script from the GitHub gist down in the description
 9. Copy the `AvaxGods.sol` smart contract code from the GitHub gist down in the description
